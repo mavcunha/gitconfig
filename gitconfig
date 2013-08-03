@@ -1,0 +1,34 @@
+# vim: ft=gitconfig
+[user]
+  name = Marco Valtas
+  email = mavcunha@gmail.com
+[color]
+  ui = auto
+[alias]
+	aa = add --all
+  b = branch
+  ci = commit -v
+  co = checkout
+	clist = config --global --list
+  di = diff
+	dc = diff --cached
+  l = log --graph --abbrev-commit --date=relative
+  ll = log --graph --abbrev-commit --date=relative --name-status
+  lp = log --graph --abbrev-commit --date=relative -p
+	ls = ls-files
+  lm = ls-files --modified
+  pu = pull
+  pr = pull --rebase
+  st = status
+[merge]
+  tool = vimdiff
+[format]
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+[push]
+	default = simple
+[sendemail]
+  smtpserver = smtp.gmail.com
+  smtpserverport = 587
+  smtpencryption = tls
+  smtpuser = mavcunha@gmail.com
+
