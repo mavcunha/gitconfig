@@ -12,12 +12,13 @@
 	clist = config --global --list
   di = diff
 	dc = diff --cached
+  ff = merge --ff-only
   l = log --graph --abbrev-commit --date=relative
   ll = log --graph --abbrev-commit --date=relative --name-status
   lp = log --graph --abbrev-commit --date=relative -p
 	ls = ls-files
   lm = ls-files --modified
-  pu = pull
+  pu = pull --ff-only
   pr = pull --rebase
   st = status
 [merge]
