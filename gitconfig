@@ -21,6 +21,7 @@
   pu = pull --ff-only
   pr = pull --rebase
   st = status
+  sub = submodule
 [merge]
   tool = vimdiff
 [format]
