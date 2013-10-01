@@ -22,6 +22,9 @@
   pr = pull --rebase
   st = status
   sub = submodule
+
+  # top most changed files in a repo
+  chfq = "!git log --name-status | grep -E '^M[[:blank:]]' | cut -d'	' -f 2  | sort | uniq -c | sort -rn | head -20"
 [merge]
   tool = vimdiff
 [format]
