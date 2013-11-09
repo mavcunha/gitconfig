@@ -20,7 +20,7 @@
   lm = ls-files --modified
   pu = pull --ff-only
   pr = pull --rebase
-  st = status
+  st = status -sb
   sub = submodule
 
   # top most changed files in a repo
