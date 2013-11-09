@@ -11,6 +11,7 @@
   co = checkout
 	clist = config --global --list
   di = diff
+  dw = diff --word-diff
 	dc = diff --cached
   ff = merge --ff-only
   l = log --graph --abbrev-commit --date=relative
