@@ -4,34 +4,37 @@
   email = mavcunha@gmail.com
 [color]
   ui = auto
+[core]
+      whitespace = trailing-space,space-before-tab
 [alias]
-	aa = add --all
+  aa = add --all
   b = branch
-  ci = commit -v
+  ci = commit -v -q
   co = checkout
-	clist = config --global --list
+  clist = config --global --list
   di = diff
   dw = diff --word-diff
-	dc = diff --cached
+  dc = diff --cached
+  fe = fetch
   ff = merge --ff-only
   l = log --graph --abbrev-commit --date=relative
   ll = log --graph --abbrev-commit --date=relative --name-status
   lp = log --graph --abbrev-commit --date=relative -p
-	ls = ls-files
+  ls = ls-files
   lm = ls-files --modified
-  pu = pull --ff-only
-  pr = pull --rebase
+  pu = "! echo 'you should fetch instead' "
   st = status -sb
   sub = submodule
 
   # top most changed files in a repo
-  chfq = "!git log --name-status | grep -E '^M[[:blank:]]' | cut -d'	' -f 2  | sort | uniq -c | sort -rn | head -20"
+  chfq = "!git log --name-status | grep -E '^M[[:blank:]]' | cut -d' ' -f 2  | sort | uniq -c | sort -rn | head -20"
 [merge]
   tool = vimdiff
+  defaultToUpstream = true
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [push]
-	default = simple
+  default = simple
 [sendemail]
   smtpserver = smtp.gmail.com
   smtpserverport = 587
