@@ -22,7 +22,7 @@
   lp = log --graph --abbrev-commit --date=relative -p
   ls = ls-files
   lm = ls-files --modified
-  pu = "! echo 'you should fetch instead' "
+  pu = "!echo Use \"$(tput setaf 6)git fetch$(tput sgr0)\" instead "
   st = status -sb
   sub = submodule
 
