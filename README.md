@@ -1,1 +1,1 @@
-Git configuration files
+## Git configuration
