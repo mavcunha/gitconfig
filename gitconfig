@@ -5,9 +5,10 @@
 [color]
   ui = auto
 [core]
-      whitespace = trailing-space,space-before-tab
+  whitespace = trailing-space,space-before-tab
+  excludesfile = /opt/boxen/config/git/gitignore
 [alias]
-  aa = add --all
+  aa = add --all .
   b = branch
   ci = commit -v -q
   co = checkout
@@ -25,7 +26,6 @@
   pu = "!echo Use \"$(tput setaf 6)git fetch$(tput sgr0)\" instead "
   st = status -sb
   sub = submodule
-
   # top most changed files in a repo
   chfq = "!git log --name-status | grep -E '^M[[:blank:]]' | cut -d' ' -f 2  | sort | uniq -c | sort -rn | head -20"
 [merge]
@@ -40,4 +40,7 @@
   smtpserverport = 587
   smtpencryption = tls
   smtpuser = mavcunha@gmail.com
-
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
+[hub]
+  protocol = https
