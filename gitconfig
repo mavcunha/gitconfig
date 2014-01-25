@@ -5,22 +5,27 @@
 [color]
   ui = auto
 [core]
+  editor = vim
   whitespace = trailing-space,space-before-tab
   excludesfile = /opt/boxen/config/git/gitignore
 [alias]
   aa = add --all .
+  aam = add --update
   b = branch
   ci = commit -v -q
   co = checkout
   clist = config --global --list
   di = diff
+  do = diff master..origin/master
   dw = diff --word-diff
   dc = diff --cached
   fe = fetch
+  fall = "!find . -type d -maxdepth 1 -exec \" /bin/sh -c '(cd {}; git fetch )' \" \\; "
   ff = merge --ff-only
   l  = log --graph --abbrev-commit --date=relative
   ll = log --graph --abbrev-commit --date=relative --name-status
   lp = log --graph --abbrev-commit --date=relative -p
+  lo = log --graph --abbrev-commit --date=relative master..origin/master
   ls = ls-files
   lm = ls-files --modified
   pu = "!echo Use \"$(tput setaf 6)git fetch$(tput sgr0)\" instead "
