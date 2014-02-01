@@ -20,7 +20,6 @@
   dw = diff --word-diff
   dc = diff --cached
   fe = fetch
-  fall = "!find . -type d -maxdepth 1 -exec \" /bin/sh -c '(cd {}; git fetch )' \" \\; "
   ff = merge --ff-only
   l  = log --graph --abbrev-commit --date=relative
   ll = log --graph --abbrev-commit --date=relative --name-status
@@ -41,7 +40,7 @@
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [push]
-  default = simple
+  default = nothing
 [sendemail]
   smtpserver = smtp.gmail.com
   smtpserverport = 587
