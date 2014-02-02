@@ -40,7 +40,7 @@
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [push]
-  default = nothing
+  default = simple
 [sendemail]
   smtpserver = smtp.gmail.com
   smtpserverport = 587
