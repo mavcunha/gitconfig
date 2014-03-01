@@ -23,6 +23,7 @@
   ff = merge --ff-only
   l  = log --graph --abbrev-commit --date=relative
   ll = log --graph --abbrev-commit --date=relative --name-status
+  llo = log --graph --abbrev-commit --date=relative --name-status master..origin/master
   lp = log --graph --abbrev-commit --date=relative -p
   lo = log --graph --abbrev-commit --date=relative master..origin/master
   ls = ls-files
