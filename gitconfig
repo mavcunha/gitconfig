@@ -15,7 +15,7 @@
   ci = commit -v -q
   co = checkout
   clist = config --global --list
-  di = diff --word-diff
+  di = diff
   do = diff master..origin/master
   dc = diff --cached
   fe = fetch
