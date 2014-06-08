@@ -20,7 +20,6 @@
   dc = diff --cached
   fe = fetch
   ff = merge --ff-only
-  fff = "!git fe && git ff"
   l  = log --graph --abbrev-commit --date=relative
   ll = log --graph --abbrev-commit --date=relative --name-status
   llo = log --graph --abbrev-commit --date=relative --name-status master..origin/master
