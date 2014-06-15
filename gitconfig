@@ -29,6 +29,7 @@
   ls = ls-files
   lm = ls-files --modified
   pu = "!echo Use \"$(tput setaf 6)git fetch$(tput sgr0)\" instead "
+  out = log --graph --abbrev-commit --date=relative origin/master..master
   st = "!git white; git status -sb"
   sub = submodule
   # check for whitespace violations
