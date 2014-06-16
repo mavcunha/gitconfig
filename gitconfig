@@ -36,6 +36,7 @@
   white = "!git diff --check; git diff --cached --check"
   # top most changed files in a repo
   chfq = "!git log --name-status | grep -E '^M[[:blank:]]' | cut -d' ' -f 2  | sort | uniq -c | sort -rn | head -20"
+  ctags = "!.git/hooks/ctags"
 [merge]
   tool = vimdiff
   defaultToUpstream = true
