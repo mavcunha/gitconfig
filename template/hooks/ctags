@@ -1,7 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 PATH="/usr/local/bin:$PATH"
 trap "rm -f .git/tags.$$" EXIT
-echo "Refreshing ctags"
-ctags --tag-relative -Rf.git/tags.$$ --exclude=.git --languages=-javascript,sql --langmap=Lisp:+.clj
+
+while read line; do
+  echo -ne "Refreshing tags: $((C++))\r"
+done < <(ctags --verbose=yes --tag-relative -Rf.git/tags.$$ --exclude=.git --languages=-javascript,sql)
+
 mv .git/tags.$$ .git/tags
