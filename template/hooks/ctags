@@ -5,6 +5,6 @@ trap "rm -f .git/tags.$$" EXIT
 
 while read line; do
   echo -ne "Refreshing tags: $((C++))\r"
-done < <(ctags --verbose=yes --tag-relative -Rf.git/tags.$$ --exclude=.git --languages=-javascript,sql)
+done < <(ctags --verbose=yes --tag-relative -Rf.git/tags.$$ --exclude=.git --langmap=Lisp:+.clj --languages=-javascript,sql)
 
 mv .git/tags.$$ .git/tags
