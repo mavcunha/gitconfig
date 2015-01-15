@@ -15,9 +15,9 @@
   ci = commit -v -q
   co = checkout
   clist = config --global --list
-  di = diff
-  do = diff master..origin/master
-  dc = diff --cached
+  di = diff --word-diff
+  do = diff --word-diff master..origin/master
+  dc = diff --word-diff --cached
   fe = fetch
   ff = merge --ff-only
   l  = log --graph --abbrev-commit --date=relative
