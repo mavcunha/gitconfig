@@ -23,8 +23,8 @@
   l  = log --graph --abbrev-commit --date=relative
   ll = log --graph --abbrev-commit --date=relative --name-status
   llo = log --graph --abbrev-commit --date=relative --name-status master..origin/master
-  lp = log --graph --abbrev-commit --date=relative -p --word-diff
-  lpo = log --graph --abbrev-commit --date=relative -p master..origin/master --word-diff
+  lp = log --graph --abbrev-commit --date=relative -p
+  lpo = log --graph --abbrev-commit --date=relative -p master..origin/master
   lo = log --graph --abbrev-commit --date=relative master..origin/master
   ls = ls-files
   lm = ls-files --modified
