@@ -18,10 +18,10 @@
   di = diff --word-diff
   do = diff --word-diff master..origin/master
   dc = diff --word-diff --cached
-  fe = fetch
+  fe = fetch -v
   ff = merge --ff-only
   l  = log --graph --abbrev-commit --date=relative
-  ll = log --graph --abbrev-commit --date=relative --name-status
+  ll = log --graph --date=relative --name-status --pretty
   llo = log --graph --abbrev-commit --date=relative --name-status master..origin/master
   lp = log --graph --abbrev-commit --date=relative -p
   lpo = log --graph --abbrev-commit --date=relative -p master..origin/master
