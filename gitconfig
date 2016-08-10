@@ -30,6 +30,7 @@
   lm = ls-files --modified
   pu = "!echo Use \"$(tput setaf 6)git fetch$(tput sgr0)\" instead "
   out = log --graph --abbrev-commit --date=relative origin/master..master
+  ss = "!f() { git log --abbrev-commit --format=oneline ${*} | selecta | egrep -oE  '[^[:space:]]{7}' | head -n 1 | xargs git show; }; f"
   sl = shortlog -sn
   st = "!git white; git status -sb"
   sub = submodule
