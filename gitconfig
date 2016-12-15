@@ -7,7 +7,6 @@
 [core]
   editor = vim
   whitespace = trailing-space,space-before-tab
-  excludesfile = /opt/boxen/config/git/gitignore
 [alias]
   aa = add --all .
   aam = add --update
@@ -54,7 +53,6 @@
 [push]
   default = simple
 [credential]
-  helper = /opt/boxen/bin/boxen-git-credential
 [hub]
   protocol = https
 [init]
